@@ -5,7 +5,9 @@ class PatternDemo {
         // pattern3(5);
         // pattern4(5);
         // pattern5(5);
-        pattern6(5);
+        // pattern6(5);
+        // pattern7(5);
+        pattern8(4);
     }
 
     static void pattern1(int n) {
@@ -77,6 +79,36 @@ class PatternDemo {
             System.out.println();
         }
 
+    }
+
+    static void pattern7(int n) {
+        for (int i = 1; i <= 2 * n; i++) {
+            int c = i > n ? 2 * n - i : i;
+            int noOfSpaces = n - c;
+            for (int s = 0; s < noOfSpaces; s++) {
+                System.out.print(" " + " ");
+            }
+            for (int j = c; j >= 1; j--) {
+                System.out.print(j + " ");
+            }
+            for (int k = 2; k <= c; k++) {
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+    static void pattern8(int n) {
+        int orgN = n;
+        n = 2 * n;
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= n; j++) {
+                int atEveryIndex = orgN - Math.min(Math.min(i, j), Math.min(n - i, n - j));
+                System.out.print(atEveryIndex);
+            }
+            System.out.println();
+        }
     }
 
 }
