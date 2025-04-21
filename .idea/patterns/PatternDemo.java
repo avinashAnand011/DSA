@@ -16,8 +16,12 @@ class PatternDemo {
         // pattern7(4);
         // System.out.println("8.\n");
         // pattern8(9);
-        System.out.println("9.\n");
-        pattern9(9);
+        // System.out.println("9.\n");
+        // pattern9(9);
+        // System.out.println("10.\n");
+        // pattern10(5);
+        // System.out.println("11.\n");
+        // pattern11(5);
         // System.out.println("28.\n");
         // pattern28(5);
         // System.out.println("30.\n");
@@ -105,15 +109,12 @@ class PatternDemo {
 
     static void pattern8(int n) {
         for (int i = 0; i < n; i++) {
-            // Print leading spaces
             for (int s = 0; s < n - i; s++) {
                 System.out.print(" ");
             }
-            // Print asterisks
             for (int j = 0; j < i * 2 - 1; j++) {
-                System.out.print("*");
+                System.out.println("*");
             }
-            // Move to the next line
             System.out.println();
         }
     }
@@ -130,6 +131,43 @@ class PatternDemo {
             System.out.println();
         }
     }
+
+    static void pattern10(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int s = 0; s < n - i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i * 2 -1; j++) {
+                if(j%2==0){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern11(int n) {
+        for (int i = 0; i < n; i++) {
+            int noOfSpaces = i;
+            for (int s = 0; s < noOfSpaces; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < n-i*2; j++) {
+                if(j%2==0){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
 
     static void pattern28(int n) {
         for (int i = 0; i < 2 * n; i++) {
