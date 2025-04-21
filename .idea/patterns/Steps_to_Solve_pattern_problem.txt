@@ -1,0 +1,5 @@
+Step1: number of lines = number of rows =number of times outer lopp will execute.
+Step2: Identify for every row number 
+    -- how many columns are there 
+    --Type of elements in column.
+Step 3: What do you need to print.    
