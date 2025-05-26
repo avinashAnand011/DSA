@@ -1,5 +1,7 @@
 package DSA.Arrays;
 
+
+
 class SumOfOddLengthSubArray {
 public static void main(String[] args) {
 }
